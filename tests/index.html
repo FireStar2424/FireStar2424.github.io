@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>List of tests</title>
+    <title>308 Permanent Redirect</title>
   </head>
   <body>
     <link href="color-scheme.css" rel="stylesheet">
-    
-    <p>These are just some tests, but if you <em>REAAAAAAALLLLLLLLLLLLYYYYYYYYYYYYY</em> want to see them, here's a list of them. (I also have a seperate testing website <a target="_blank" href="https://firestar2424stests.w3spaces.com">here</a>)</p>
-    <br>
-    <a href="https://firestar2424.github.io/tests/form">Form test</a>
-    <br>
-    <a href="https://firestar2424.github.io/tests/file-submit">Image Submit test</a>
-    <br>
-    <a href="https://firestar2424.github.io/tests/iframe">Iframe test</a>
-    <br>
-  </body>
-</html>
-<span id="footer"><a href="https://firestar2424.github.io">Home</a> <a href="https://firestar2424.github.io/tests">Tests</a> 
-  <a href="https://firestar2424.github.io/projects">Projects</a> <a href="https://firestar2424.github.io/blog/">Blog</a></span>
+
+    <h1><strong>308 Permanent Redirect</strong></h1>
+    <p>The page you were looking for has been moved to a new location.</p>
+<br>
+    <div id="countdownMessage">Redirecting in 5 seconds</div>
+
+<script>
+    function updateCountdown() {
+        var countdownElement = document.getElementById('countdownMessage');
+        var countdownValue = parseInt(countdownElement.innerText.match(/\d+/)[0]);
+
+        if (countdownValue > 1) {
+            countdownValue--;
+            countdownElement.innerText = 'Redirecting in ' + countdownValue + ' seconds';
+        } else {
+            window.location.href = 'https://firestar2424stests.w3spaces.com';
+        }
+    }
+
+    setInterval(updateCountdown, 1000);
+</script>
