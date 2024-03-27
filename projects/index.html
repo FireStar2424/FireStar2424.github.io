@@ -6,7 +6,15 @@
   </head>
   <body>
      <link href="color-scheme.css" rel="stylesheet">
-  A list of projects I made. Divided into 3 types. (I would call these more "tests that are slightly better than the actual '<a href="https://firestar2424stests.w3spaces.com/">Tests</a>' section", so these are basically just random things nontheless.)
+    <link href="color-scheme.css" rel="stylesheet">
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/index">Home</a>
+  <a href="https://firestar2424stests.w3spaces.com/">Tests</a>
+  <a href="/projects">Projects</a>
+  <a href="https://firestar2424.wordpress.com"/>Blog</a>
+</div>
+  <span class="closebutton" style="font-size:25px;cursor:pointer" onclick="openNav()"> <i class="fa-solid fa-bars"></i></span> A list of projects I made. Divided into 3 types. (I would call these more "tests that are slightly better than the actual '<a href="https://firestar2424stests.w3spaces.com/">Tests</a>' section", so these are basically just random things nontheless.)
     <br>
     <h2><strong>Packaged Types</strong></h2>
     <h4>A list of Scratch projects packaged into HTML via the <a target="_blank" href="https://packager.turbowarp.org/">Turbowarp Packager</a>. (Also, some of these have things taken from multiple sources, so heres the <a href="https://firestar2424.github.io/projects/credits">credits</a>)</h4>
@@ -27,6 +35,15 @@
 "><strong>Snek 2.0</strong></a> just <a href="/projects/snek.py">Snek</a> but better. Made with special help from ChatGpt.</p>
     <br>
     <br>
+    <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
     <span id="footer"><a href="/index">Home</a> <a href="/tests">Tests</a> 
   <a href="/projects">Projects</a> <a href="https://firestar2424.wordpress.com/">Blog</a></span>
   </body>
