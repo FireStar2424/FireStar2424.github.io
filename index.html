@@ -6,6 +6,26 @@
   </head>
   <body>
     <link href="color-scheme.css" rel="stylesheet">
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/index">Home</a>
+  <a href="https://firestar2424stests.w3spaces.com/">Tests</a>
+  <a href="/projects">Projects</a>
+  <a href="https://firestar2424.wordpress.com"/>Blog</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
         
     <p>Hello humans! My name is firestar2424. (It's pronounced twenty four-twenty four, btw)
     <br>
