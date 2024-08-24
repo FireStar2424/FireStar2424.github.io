@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Firestar's discord bots</title>
+    <script src="https://kit.fontawesome.com/6df4b13850.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+     <link href="color-scheme.css" rel="stylesheet">
+    <link href="color-scheme.css" rel="stylesheet">
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/index">Home</a>
+  <a href="https://firestar2424stests.w3spaces.com/">Tests</a>
+  <a href="#">Projects</a>
+  <a href="https://firestar2424.wordpress.com"/>Blog</a>
+</div>
+  <span class="closebutton" onclick="openNav()"> <i class="fa-solid fa-bars"></i></span> <h1>Silly little robot ;p docs</h1>
+  <br>
+  if message contains/is <em>hi</em> or <em>hello</em>:<br>
+  responds with: "hi~"
+  <br><br>
+  if message contains/is <em>roll dice</em> or <em>:rolldice:</em>*:<br>
+  responds with "u rolled a *random number between 1-6*"
+  <br><br>
+  if message contains/is <em>:imwatchinu:</em>*:<br>
+  responds with "ew"
+  <br><br>
+  if message contains/is <em>how r u</em> or <em>how are you</em>:<br>
+  responds with "idk" or "i'm a bot, i don't have feelings" depending on how you spell it
+  <br><br>
+  if message contains/is <em>who is your creator</em>:<br>
+  responds with "firestar2424"
+  <br><br>
+  else:<br>
+  randomly chooses between: "wha", "?????", and "for i am a lowly bot, and i can't understand what your mighty self is saying... (speak in regular english pls)"
+    <br>
+    <br>
+  <h6><strong>Last updated: August 24, 2024</strong></h6>
+    <br><br>
+    please talk to me if there are any problems/ it's not working
+    <br><br>
+    thank you
+    <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+    <!--
+    <span id="footer"><a href="/index">Home</a> <a href="/tests">Tests</a> 
+  <a href="/projects">Projects</a> <a href="https://firestar2424.wordpress.com/">Blog</a></span>
+    -->
+  </body>
+</html>
