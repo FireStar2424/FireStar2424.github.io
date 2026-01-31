@@ -6,13 +6,13 @@
 </head>
 <body>
 <link href="color-scheme.css" rel="stylesheet">
-<a href="index.html">Back to projects</a> <br><br><br>
-<button id="stop-button" type="button">Stop</button>
+<a href="index.html">Back to projects</a> <br><br><br><br><br>
+<button class="button" id="stop-button" type="button">Stop</button>
 <p>
 <span id="seconds">0</span> seconds have passed.
 </p>
 <br>
-<input type="reset" id="reset" name="reset">
+<input class="button" type="reset" id="reset" name="reset">
 <script>
 var seconds = document.getElementById("seconds");
 var countUp = function() {
@@ -23,13 +23,16 @@ seconds.textContent=time+1;
 var stopCountUp = function() {
     window.clearInterval(idk);}
 
-
+var refreshPage = function() {
+    window.location.reload();}
 
 
 
 var idk = window.setInterval(countUp,1000)
 var stopButton = document.getElementById("stop-button");
 stopButton.addEventListener("click", stopCountUp);
+var resetButton = document.getElementById("reset");
+resetButton.addEventListener("click", refreshPage);
 </script>
 </body>
 </html>
