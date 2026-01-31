@@ -67,3 +67,15 @@ border: 2px solid white;
      font-size: 20px;
      cursor: pointer;
 }
+
+.button {
+    background-color: black;
+    border-radius: 4px;
+    padding: 3px 10px;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    transition-duration: 0.4s;
+    margin: 0.5px 0.25px;
+    cursor: pointer;
+}
