@@ -6,7 +6,7 @@
 </head>
 <body>
 <link href="color-scheme.css" rel="stylesheet">
-    
+<a href="index.html">Back to projects</a> <br><br><br>
 <button id="stop-button" type="button">Stop</button>
 <p>
 <span id="seconds">0</span> seconds have passed.
@@ -30,9 +30,6 @@ var stopCountUp = function() {
 var idk = window.setInterval(countUp,1000)
 var stopButton = document.getElementById("stop-button");
 stopButton.addEventListener("click", stopCountUp);
-
-var resetButton = document.getElementById("reset");
-resetButton.addEventListener("click", window.location.reload());
 </script>
 </body>
 </html>
