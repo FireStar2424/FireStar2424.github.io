@@ -5,22 +5,21 @@
 <title>Stopwatch</title>
 </head>
 <body>
-
+<link href="color-scheme.css" rel="stylesheet">
+    
 <button id="stop-button" type="button">Stop</button>
 <p>
-<span id="seconds">0</span> seconds have gone by!
+<span id="seconds">0</span> seconds have passed.
 </p>
 <br>
 <input type="reset" id="reset" name="reset">
 <script>
-// Make it count up on a timer, calling this function
 var seconds = document.getElementById("seconds");
 var countUp = function() {
 var time= parseFloat(seconds.textContent)
 seconds.textContent=time+1;
 };
 
-// How can you make it stop counting?
 var stopCountUp = function() {
     window.clearInterval(idk);}
 
@@ -31,6 +30,9 @@ var stopCountUp = function() {
 var idk = window.setInterval(countUp,1000)
 var stopButton = document.getElementById("stop-button");
 stopButton.addEventListener("click", stopCountUp);
+
+var resetButton = document.getElementById("reset");
+resetButton.addEventListener("click", window.location.reload());
 </script>
 </body>
 </html>
