@@ -112,3 +112,8 @@ hr.divider {
     margin: 0 auto;
     padding: 0px 20px 60px;
 }
+
+h1 {
+     font-family: monospace;
+     font-size: 30px;
+}
