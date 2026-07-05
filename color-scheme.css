@@ -104,5 +104,5 @@ nav ul li:last-child::after {
 hr.divider {
     border: none;
     border-top: 1px solid #80818B;
-    margin: 24px 0;
+    margin: 18px 0;
 }
