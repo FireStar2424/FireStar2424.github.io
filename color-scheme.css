@@ -1,4 +1,111 @@
-     body {
+body {
+  background-color: rgb(12, 12, 20);
+  color: white;
+  font-family: monospace;
+  text-align: center;
+  font-size: 15px;
+}
+a:link, a:visited {
+  color:white;
+}
+
+a:hover {
+  color: rgb(201, 201, 201);
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul:before {
+    margin-right: 5px;
+}
+
+nav ul li:after {
+    content: "||";
+    margin: 0 5px;
+}
+
+nav ul li:last-child::after {
+  content:"";
+}
+
+/*nav:after {
+  content: "\A";
+  white-space: pre;
+}*/
+
+h1 {
+  font-size: 30px;
+}
+
+.button {
+    background-color: black;
+    border-radius: 4px;
+    padding: 3px 10px;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    transition-duration: 0.4s;
+    margin: 0.5px 0.25px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(209, 209, 209);
+    color: black;
+}
+
+.buttongroup .buttongrp{
+  background-color: black;
+  border: none;
+  padding: 15px 32px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16;
+  float: left;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.buttongroup .buttongrp:hover{
+    background-color: rgb(209, 209, 209);
+    color: black;
+}
+
+#container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0px 20px 60px;
+}
+
+#article {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px 20px 60px;
+}
+
+hr.divider {
+    border: none;
+    border-top: 1px solid #80818B;
+    margin: 18px 0;
+}
+
+#articleheader {
+  line-height: 80%;
+}
+
+#description {
+  color: rgb(199, 199, 199);
+}
+/*
+body {
       background-color: rgb(12, 12, 20);
        font-family: monospace;
        text-align: center;
@@ -72,7 +179,7 @@ border: 2px solid white;
 .button {
     background-color: black;
     border-radius: 4px;
-    /* padding: 3px 10px; */
+     padding: 3px 10px;
     display: inline-block;
     font-size: 16px;
     color: white;
